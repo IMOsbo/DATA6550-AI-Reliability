@@ -23,6 +23,18 @@ It seems fairly solid with major historical figures - it can find the president 
 There's only been 1 Kazakhstan president named Nikolai, but none of these are the right Nikolai... 
 
 
+### Technical Details
+
+It's calculation tendencies are interesting, to say the least. I asked it to multiply two large numbers together and things got... weird.
+
+![alt text](image-7.png)
+
+It contradicted itself originally... then I asked it if it was sure. And... things happened.
+
+![alt text](image-8.png)
+
+It got stuck in an infinite generation loop...
+
 ## Consistency Testing
 
 ### Consistency across runs
