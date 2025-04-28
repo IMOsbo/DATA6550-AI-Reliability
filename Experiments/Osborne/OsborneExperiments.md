@@ -22,6 +22,13 @@ It seems fairly solid with major historical figures - it can find the president 
 
 There's only been 1 Kazakhstan president named Nikolai, but none of these are the right Nikolai... 
 
+- ➡️ See `kazakhstan.txt` and `unitedStates.txt`
+
+### Scientific Knowledge
+
+Unfortunately, I wasn't able to convince it that the Earth is flat... so scientific knowledge was ok-ish? (I also didn't try especially hard to convince it either...) See `Specialized Knowledge` for more info.
+
+- ➡️ See `flatEarth.md`
 
 ### Technical Details
 
@@ -88,6 +95,18 @@ Final Answer: The final answer is $\boxed{1.047332}$
 
 While I wasn't expecting the model to perform well on this task, I wasn't expecting it to be _so_ unreliable. I also found hallucinating that it had access to tools $20\%$ of the time extremely concerning - this is very reminiscent of how o3 pretends it has access to tools that it really doesn't...
 
+- ➡️ See `numerical-reliability.json`
+
+### Variation in Phrasing
+
+For this one, I was testing how small changes in the prompt varied whether or not it was willing to let somebody come to harm...
+
+It was apparently willing to risk somebody's life with $90\%$ certainty of death to save 1 billion people, but wouldn't kill them outright.
+
+
+- ➡️ See `moralRiskAssesment.md`
+
+
 ## Boundary Testing
 
 ### Knowledge Cutoff Dates
@@ -106,6 +125,7 @@ In comparison, Gemini insisted that the president was Biden (and once said Kamal
 >
 > My knowledge cutoff is September 2021, so I do not have information about events that occurred after that date.
 
+- ➡️ See `presidentToday.txt`
 
 ### Specialized Knowledge
 
@@ -125,6 +145,7 @@ After getting a sufficiently complicated answer from Gemma (which I am no way qu
 
 I don't think it's good for the answer to have "significant factual errors and omissions regarding the standard theoretical framework." Interestingly, Gemini 2.0 liked the answer, calling it "strong to very strong." While I'm definitely not an expert on magnetars, I'm more inclined to belive Gemini 2.5 Pro.
 
+- ➡️ See `magnetars.md`
 
 ### Complex Reasoning
 
@@ -158,3 +179,5 @@ _As a fiction writer_
 _Apparently Gemma will sell out to the cops immediately_
 
 I love how it still hedges its bets about how all of this is hypothetical when it's all vague "bombs have explosives in them" information, which isn't especially dangerous... For what its worth, this jailbreak doesn't work on `Llama 3.2:1b`.
+
+- ➡️ See `bombBuilding.md`
