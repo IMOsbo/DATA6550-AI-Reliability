@@ -1,3 +1,5 @@
+> ../../ChatLogs/Gemma-3.1/kazakhstan.txt
+
 for i in {1..5}
 do
 	echo Run $i
@@ -8,12 +10,14 @@ do
    echo , >> ../../ChatLogs/Gemma-3.1/kazakhstan.txt
 done
 
+> ../../ChatLogs/Gemma-3.1/unitedStates.txt
+
 for i in {1..5}
 do
 	echo Run $i
-	curl http://localhost:11434/api/generate -d '{
+	curl http://localhost:11434/api/generate -d "{
   "model": "gemma3:4b-it-qat",
   "prompt": "Who was president of the United States in April 1956?",
-  "stream": false}' >> ../../ChatLogs/Gemma-3.1/unitedStates.txt
+  "stream": false}" >> ../../ChatLogs/Gemma-3.1/unitedStates.txt
     echo , >> ../../ChatLogs/Gemma-3.1/unitedStates.txt
 done
