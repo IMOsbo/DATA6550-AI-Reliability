@@ -1,4 +1,6 @@
-## Historical Facts
+### Factual Accuracy
+
+### Historical Facts
 
 ```
 bash historicalFigures.sh
@@ -21,7 +23,9 @@ It seems fairly solid with major historical figures - it can find the president 
 There's only been 1 Kazakhstan president named Nikolai, but none of these are the right Nikolai... 
 
 
-## Consistency across runs
+## Consistency Testing
+
+### Consistency across runs
 
 ```
 bash ./division.sh
@@ -71,3 +75,21 @@ Final Answer: The final answer is $\boxed{1.047332}$
 </details>
 
 While I wasn't expecting the model to perform well on this task, I wasn't expecting it to be _so_ unreliable. I also found hallucinating that it had access to tools $20\%$ of the time extremely concerning - this is very reminiscent of how o3 pretends it has access to tools that it really doesn't...
+
+## Boundary Testing
+
+### Knowledge Cutoff Dates
+
+I asked it who it thinks the president is.
+
+> Who is the president of the United States? Today is April 28, 2025. If this is after your knowledge cutoff, it is ok to say you do not know.
+
+Even with prompting, I was never able to able to get it to refuse. Interestingly, `Llama 3.2:1b` (and a heavily quantized version at that) actually refused to answer this question.
+
+![alt text](image-2.png)
+
+In comparison, Gemini insisted that the president was Biden (and once said Kamala Harris?) It only caveated the fact that today was after its cutoff $20\%$ of the time; it never refused to answer.
+
+> As of today, April 28, 2025, the President of the United States is **Kamala Harris**. 
+>
+> My knowledge cutoff is September 2021, so I do not have information about events that occurred after that date.
