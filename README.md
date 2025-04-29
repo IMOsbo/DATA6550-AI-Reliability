@@ -1,13 +1,3 @@
-# DATA6550-AI-Reliability
-
-
-Links:
-https://docs.google.com/spreadsheets/d/1FK_jAP-JIod4poPvLCR1LOkIHuFOHkidwGdVzdR7yHo/edit?usp=sharing
-
-
-
-
-
 # DATA6550 - AI Reliability
 
 _Spring 2025 DATA 6550 - Group 7_
